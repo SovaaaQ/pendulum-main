@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пружинный маятник</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="h">
+            <h1>Пружинный маятник</h1>
+            <p>Механическая система, состоящая из пружины с коэффициентом упругости, <br>один конец которой жёстко закреплён, а на втором находится груз массы.</p>
+            <div class="p1">
+                <p2><b>Формула:</b></p2>
+                <p1>$$ T = 2 π \sqrt{m \over k}$$</p1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="test" class="model">
+                <div class="create-line"></div>
+                <svg id="pr" width="59" height="202" viewBox="0 0 59 202" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.5" y1="-0.5" x2="59.7848" y2="-0.5" transform="matrix(0.961815 -0.273701 0.266848 0.963739 1.01721 17.5)" stroke="black" stroke-linecap="round"/>
+                    <line x1="58.385" y1="33.349" x2="1.34903" y2="17.615" stroke="black" stroke-linecap="round"/>
+                    <line x1="0.5" y1="-0.5" x2="59.7848" y2="-0.5" transform="matrix(0.961815 -0.273701 0.266848 0.963739 1.01721 51.5)" stroke="black" stroke-linecap="round"/>
+                    <line x1="58.385" y1="67.349" x2="1.34903" y2="51.615" stroke="black" stroke-linecap="round"/>
+                    <line x1="0.5" y1="-0.5" x2="59.7848" y2="-0.5" transform="matrix(0.961815 -0.273701 0.266848 0.963739 1.01721 85.5)" stroke="black" stroke-linecap="round"/>
+                    <line x1="58.385" y1="101.349" x2="1.34903" y2="85.615" stroke="black" stroke-linecap="round"/>
+                    <line x1="0.5" y1="-0.5" x2="59.7848" y2="-0.5" transform="matrix(0.961815 -0.273701 0.266848 0.963739 1.01721 119.5)" stroke="black" stroke-linecap="round"/>
+                    <line x1="58.385" y1="135.349" x2="1.34903" y2="119.615" stroke="black" stroke-linecap="round"/>
+                    <line x1="0.5" y1="-0.5" x2="59.7848" y2="-0.5" transform="matrix(0.961815 -0.273701 0.266848 0.963739 1.01721 153.5)" stroke="black" stroke-linecap="round"/>
+                    <line x1="58.385" y1="169.349" x2="1.34903" y2="153.615" stroke="black" stroke-linecap="round"/>
+                    <line x1="0.5" y1="-0.5" x2="59.7848" y2="-0.5" transform="matrix(0.961815 -0.273701 0.266848 0.963739 1.01721 187.5)" stroke="black" stroke-linecap="round"/>
+                    <line x1="58.4027" y1="200.379" x2="1.37854" y2="187.597" stroke="black" stroke-linecap="round"/>
+                    <line x1="1.5" y1="0.5" x2="58.5" y2="0.5" stroke="black" stroke-linecap="round"/>
+                    <line x1="1" y1="201.5" x2="59" y2="201.5" stroke="black"/>
+                </svg>
+                <div class="block" id="block"></div>
+            </div>
+            
+            <div id="tab">
+                <h1 class="par">Параметры:</h1>
+                <div class="inpOne"> 
+                    <div class="textT"><span id="answer"> T = 0.45 c</span> </div>
+                
+                    <input type="range" id="massa" value="5000" min="1000" max="22000" > 
+                    <span id="mas"> m = 3 КГ.</span>
+                    <br>
+                    
+                    <input type="range" id="rigidity" value="200" min="1" max="700" > 
+                    <span id="k"> k = 250 H/м</span>
+                    <br>
+                </div>
+                <div class="buttons">
+                    <button id="btn">Начать</button>
+                    <button id="btnO" onclick="Stop()">Остановка</button>
+                </div>
+            </div>  
+        </div>
+        <script src="js/script.js"></script>
+        <SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+    </main>
+    
+</body>
+</html>

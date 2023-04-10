@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-height: 1000px;
+
+    background-color: #cfdaec;
+}
+
+:root {
+    --h: 170px;
+    --x: 100px;
+    --x0: 0;
+    --x1: 0;
+    --z: 1;
+}
+
+.header{
+    background-color: #eef0f6;
+    width: 100%;
+    max-height: 1000px;
+    padding-bottom: 100px;
+}
+
+.h {
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.h h1{
+    padding-bottom: 30px;
+}
+
+.p1{
+    padding-top: 30px;
+    width: 7%;
+    font-size: 20px;
+    border: #cfdaec;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    overflow-y: hidden;
+} 
+
+.create-line{
+    margin-top: 40px;
+    padding-left: 700px;
+    border-top: 8px solid #b05a1d;
+}
+
+.model {
+    width: 400px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pr {
+    --T: 0.45c;
+
+    width: 50px;
+    height: var(--h);
+
+    transform-origin: top;
+    transform: scale(var(--z));
+    animation: movePr var(--T) infinite;
+}
+
+.block {
+    --m: 50px;
+
+    height: var(--m);
+    width: var(--m);
+
+    border-radius: 120px;
+    background-color: #094d74;
+}
+
+#tab {
+    justify-content: space-between;
+    width: 500px;
+    height: 560px;
+    border: 2px solid #b05a1d;
+    border-radius: 9px;
+    padding-right: 20px;
+    background-color: #cfdaec;
+}
+
+.par{
+    padding-top: 10px;
+    padding-bottom: 45px;
+    padding-left: 20px;
+
+    text-align: center;
+}
+
+
+.inpOne {
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-bottom: 90px;
+}
+
+#massa{
+    width: 300px;
+    height: 60px;
+    padding-left: 10px;
+}
+
+#rigidity{
+    width: 150px;
+    height: 60px;
+}
+
+.textT {
+    font-size: 4vmin;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+#mas{
+    width: 300px;
+    font-size: 20px;
+}
+
+#k{
+    width: 300px;
+    font-size: 20px;
+}
+
+#btn {
+    width: 140px;
+    height: 50px;
+
+    font-size: 3vmin;
+    border-radius: 3vmin;
+    border-color: #b05a1d;
+
+    color: rgb(0, 0, 0);
+    background-color: #9cb9d1;
+}
+
+#btnO {
+    width: 150px;
+    height: 50px;
+    
+    font-size: 3vmin;
+    border-radius: 3vmin;
+    border-color: #b05a1d;
+    
+    color: rgb(0, 0, 0);
+    background-color: #9cb9d1;
+}
+
+.buttons {
+    margin-top: 120px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes movePr {
+    0%{
+        height: var(--x0);
+    }
+    50%{
+        height: var(--x1);
+    }
+    100%{
+        height: var(--x0);
+    }
+}
+
